@@ -24,7 +24,9 @@ Noelio Perez (77647747)
 
 ## Question 1: Empirical Comparison
 
-`![Time Plot](time_plot.png)`
+![Time Plot](time_plot.png)
+
+We can see that time is directly proportional with $nm$, suggesting that the empirical running time of the algorithm is $O(nm)$. 
 
 Note: Input files used are found in the `input/` directory as `input1.in, input2.in, ..., input10.in` and respective outputs are found in `output/` directory as `input1.out, input2.out, ..., input10.out`. 
 
@@ -60,4 +62,4 @@ sub_opt(K, val, A, B):
     return M[n, m]
 ```
 
-The part of the algorithm with the heaviest operation is the nested for loop for which we're iterating our entire 2D array of size $n+1$ by $m+1$, therefore both the time and space complexity of the algorithm is $O(nm)$
+The part of the algorithm with the heaviest operation is the nested for loop for which we're iterating our entire 2D array of size $n+1$ by $m+1$, therefore both the time and space complexity of the algorithm is $O(nm)$. 
