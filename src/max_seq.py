@@ -32,7 +32,7 @@ def sequence_dp(k, val, A, B):
     i = n 
     j = m
     while(i != 0 and j != 0):
-        if M[i-1][j-1] == M[i][j] - val[A[i-1]]:
+        if A[i-1] == B[j-1]:
             solution.append(A[i-1])
             i -= 1
             j -= 1
@@ -64,7 +64,7 @@ def main():
         print("K is not a Nonnegative Integer!")
     
     opt, subsequence = sequence_dp(k, val, A, B)
-    out_name = f'./output/{sys.argv[1].split("/")[-1].split(".")[0]}.out'
+    out_name = f'../output/{sys.argv[1].split("/")[-1].split(".")[0]}.out'
     with open(out_name, "w") as file:
         file.write(f'{opt}\n')
         file.write(subsequence)
