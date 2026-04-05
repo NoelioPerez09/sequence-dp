@@ -24,7 +24,7 @@ Noelio Perez (77647747)
 
 ## Question 1: Empirical Comparison
 
-![Time Plot]("./time_plot.png")
+`![Time Plot](time_plot.png)`
 
 Note: Input files used are found in the `input/` directory as `input1.in, input2.in, ..., input10.in` and respective outputs are found in `output/` directory as `input1.out, input2.out, ..., input10.out`. 
 
